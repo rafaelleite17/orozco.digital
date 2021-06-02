@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+body
+    font-family: 'Roboto', sans-serif
+    background: #f5f9fc
+.container 
+    max-width: 1300px
+    margin: auto
+    .row
+        display: flex
+        height: 100vh
+        &.center
+            justify-content: center
+// Card
+.logo
+    text-transform: uppercase
+
+.card
+    padding: 1rem
+    box-shadow: 0 -.2rem .4rem .3rem #edf0fa
+    margin: auto 1rem
+    max-width: 300px
+    border-radius: 1rem
+    position: relative
+    z-index: 10
+    &:before
+        content: ''
+        z-index: 0
+        width: .5rem
+        top: 2rem
+        border-radius: .5rem
+        right: -.3rem
+        position: absolute
+        height: calc(80% + 1rem)
+    &:after
+        z-index: 1
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        backdrop-filter: blur(10px)
+        height: 100%
+        width: 100%
+        background: rgba(255,255,255,0.5)
+    .imagem
+        z-index: 10
+        position: relative
+        max-height: 320px
+        overflow: hidden
+        border-radius: .7rem
+        padding: 1rem
+        margin: 1rem
+        border-radius: 50%
+        background: #edf0fa
+        box-shadow: 0 0 .5rem .2rem #edf0fa
+        img
+            border-radius: 50%
+            display: block
+            max-width: 100%
+            height: auto !important
+            width: auto\9 /* ie8+9 */
+            -ms-interpolation-mode: bicubic
+.headers
+    padding: 1rem
+    position: relative
+    z-index: 10
+    h2
+        font-size: 1.2rem
+        color: #707070
+    p
+        margin-top: .5rem
+        font-size: .9rem
+        color: #707070
+.btn
+    padding: .8rem 1rem
+    overflow: hidden
+    position: relative
+    z-index: 10
+    margin: 0.2rem 1rem 0.5rem 
+    font-weight: bold
+    border-radius: .7rem
+    text-decoration: none
+    color: #fff
+    background: #11C3FB
+    display: flex
+    &:after
+        content: ''
+        top: 0
+        z-index: -1
+        left: 0
+        transition: width .5s
+        position: absolute
+        width: 0
+        height: 100%
+        border-radius: .7rem
+        background: #11C3FB
+    &:hover
+        &:after
+            width: 100%
+            background: #fc0037
+    &.icon
+        svg
+            margin-left: auto
+.grid
+    max-width: 1300px
+    margin: auto
+    display: grid
+    &.two-grid
+        grid-template-columns: auto 1fr
+    &.three
+        grid-template-columns: 1fr 1fr 1fr
+    &.grid-fr-fr
+        grid-template-columns: 1fr 1fr
+.menu-header
+    nav
+        display: flex
+        ul
+            margin-left: auto
+            display: flex
+            li
+                margin: .5rem
+                border-radius: 2rem
+                padding: .8rem 1.3rem
+                a
+                    color: #181b24 !important
+                &:hover
+                    background: 
+                    background: rgba(24, 27, 36, 0.082)
+                    background: linear-gradient(58deg, rgba(24, 27, 36, 0.082) 0%, rgba(101, 106, 121, 0.082) 100%)
+                &.active
+                    background: rgb(17,195,251)
+                    background: linear-gradient(58deg, rgba(17,195,251,1) 0%, rgba(2,150,251,1) 100%)
+                    a
+                        color: #fff !important
+header
+    padding: 3rem 2rem 2rem
+    div
+        max-width: 1320px !important
+        grid-template-columns: auto 1fr   
+.container
+    padding: 1rem
+    &.content
+        margin-bottom: 1rem
+        position: relative
+        border-radius: 0 .7rem .7rem 
+    .title
+        padding: .5rem 1rem
+        background: rgb(17,195,251)
+        background: linear-gradient(58deg, rgba(17,195,251,1) 0%, rgba(2,150,251,1) 100%)
+        border-radius: 2rem
+        color: #fff !important
+        font-size: 1.2rem
+        z-index: 99
+        position: relative
+        margin: 1rem 0
+        h2
+        font-weight: normal !important
+    .descricao
+        padding: 0 1rem
+        font-size: 1.1rem
+        font-weight: 300
+        color: #deebfd
+.pagina
+    &::after
+        background: rgba(255, 255, 255, 1)
+        content: ''
+        height: 25vh
+        width: 100%
+        position: absolute
+        top: 0
+        z-index: -1
+.links
+    margin: auto 1rem
+    padding: 2rem 0
+    justify-content: center
+    .titulo
+        color: #0296fb
+    .sub
+        font-size: .8rem
+        margin-bottom: 2rem
+    .link
+        background: #ffffff
+        margin: 1rem 0
+        text-align: center
+        width: 100%
+        clear: both
+        border-radius: .5rem
+        cursor: pointer
+        .label
+            z-index: 9
+            display: flex
+            position: relative
+            height: auto
+            border-radius: .5rem
+            overflow: hidden
+            padding: .5rem 1rem 
+            &:after
+                background: rgb(17,195,251)
+                content: ''
+                width: 100%
+                position: absolute
+                left: -100%
+                z-index: 2
+                border-radius: .5rem
+                transition: left .5s ease 0s
+            &:hover
+                &:after
+                    top: 0
+                    left: 0
+                    height: 100%
+            p
+                font-size: .8rem
+                margin: auto 1rem
+
+        &:hover
+            p
+                color: #fff
+                z-index: 999
+                display: block
+            .label
+                img
+                    z-index: 9
+                    filter: brightness(255)
+.redes 
+    margin: 1rem 0
+    display: flex
+    justify-content: center
+    .btn
+        padding: .6rem
+        background: rgba(0,0,0,0)
+        color: #11c3fb 
+        border: 2px solid #11c3fb 
+        margin: 0 .4rem !important
+        width: auto !important
+        &:hover
+            background: #11c3fb
+            color: #fff
+        &::after
+            background: rgba(0,0,0,0)
+.background
+    background: red
+    margin-top: 2rem
+    padding: 2rem
+    background: #deeaee
+    &.carousel
+        margin-top: 0 !important
+        padding: 0 !important
+        position: relative
+        &::after
+            z-index: 0
+            content: ''
+            width: 100%
+            top: -20%
+            height: 122%
+            position: absolute
+            background: #deeaee
+            filter: blur(10px)
+.titulo
+    font-weight: normal
+    padding: 1rem 0
+    font-size: 1.3rem
+    color: rbga(0,0,0,0.7) !important
+footer
+    background: #fff
+    .links
+        padding: 1rem 0
+        margin: 0 !important
+    a
+        padding: 0 1rem 0 0
+        color: #049bfb
+        font-size: .9rem
+    p
+        padding: 1rem 0
+        color: rgba(0,0,0,0.7)
+        font-size: .6rem
+    .grid
+        padding: 0 1rem
+        box-shadow: 0 1px 0 0 rgba(0,0,0,0.05)
+    .redes
+        width: auto !important
+        margin-left: auto
+        .btn
+            padding: .5rem
+.noticias
+    margin-top: 2rem
+    margin-bottom: 3rem
+    grid-column-gap: 1.5rem !important
+    .titulo 
+        color: #0296fb
+    .message
+        color: #536468
+        font-size: .9rem
+    .item
+        padding: 1.5rem
+        transition: all 0.5s ease-out
+        cursor: pointer
+        &:hover
+            background: linear-gradient(58deg, #cfdcee4f  0%, #e5effcb2 100%)
+            border-radius: .5rem
+    .imagem
+        z-index: 10
+        position: relative
+        max-height: 320px
+        overflow: hidden
+        border-radius: .7rem
+        height: 220px
+        background: #edf0fa
+        box-shadow: 0 0 .5rem .2rem #edf0fa
+        .data
+            padding: .7rem
+            background: linear-gradient(58deg, rgba(17,195,251,1) 0%, rgba(2,150,251,1) 100%)
+            position: absolute
+            color: #fff
+            font-weight: bold
+            font-size: .8rem
+            bottom: 1rem
+            right: 1rem
+            border-radius: .4rem
+        img
+            object-fit: none
+            object-position: center
+.servicos
+    margin-top: 2rem
+    z-index: 9
+    position: relative
+    border-radius: .2rem
+    box-shadow: 0 0 2rem 0 #16171d0c
+    background: rgba(255,255,255,1) !important
+.slider
+    margin: 0 auto
+    max-width: 1336px !important
+    padding: 0 !important
+    position: relative
+    .slide
+        background-size: cover
+        border-radius: .3rem
+        height: 600px
+        width: 100%
+        background-position: center
+    .grid 
+    &:after
+        width: 90%
+        content: ''
+        height: 100px
+        bottom: 0
+        position: absolute
+    .card-slider
+        border-radius: .5rem !important
+        max-width: 300px
+        padding: 2rem
+        position: relative
+        z-index: 10
+        .imagem
+            z-index: 10
+            position: relative
+            overflow: hidden
+            border-radius: .7rem
+            padding: 1rem
+            border-radius: 50%
+            background: #11c4fb86 
+            box-shadow: 0 0 .5rem .2rem #11c4fb86 
+            img
+                border-radius: 50%
+                display: block
+                max-width: 100%
+                height: auto !important
+                width: auto\9 /* ie8+9 */
+                -ms-interpolation-mode: bicubic
+// curriculo
+#meucurriculo
+    text-align: justify
+    color: #28434b
+    font-family: 'Roboto', sans-serif
+    background: #fff
+    padding:   clamp(1rem, 1.5vw, 1.8rem)
+    .header
+        font-size: 1.2rem
+        font-weight: bold
+        padding: .7rem 0
+        color: rgba(2,150,251,1) 
+        border-radius: .7rem
+    a 
+         color: rgba(2,150,251,1) 
+         font-weight: bold
+    h2
+        font-size: 1.7rem
+        padding: .7rem 0
+    .dados
+        padding: 1rem 0
+        h3
+            font-size: 1.2rem
+        div
+            font-size: .9rem
+            padding: .5rem 1rem 0
+            span
+                &:nth-child(1)
+                    font-weight: bold
+    .formacao
+        padding: 1rem .3rem 
+        .item
+            padding: .7rem 1rem .3rem
+    .histprof
+        h3
+            padding-bottom: 1rem
+        padding: 1rem .3rem   
+        .item
+            margin-bottom: 1rem
+            padding: .8rem 1rem .4rem
+            display: inline-block
+            background: rgba(225, 234, 236, 0.2)
+            p
+                padding: .1rem 0
+                strong
+                    color: rgba(2,150,251,1) 
+    .experiencia
+        padding: 0 1rem 1rem
+        p
+            padding: .2rem 0
+        ul
+            margin: 1rem 0
+            border-radius: .4rem
+            background: rgba(225, 234, 236, 0.2)
+            display: inline-block
+            padding: 1rem
+            li
+                margin-top: .5rem
+                font-size: .9rem
+                svg
+                    margin-right: .5rem
+                    color: rgba(2,150,251,1) 
