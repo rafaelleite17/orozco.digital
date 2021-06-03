@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Home from './home'
-export default function Index() {
+import Cards from '../components/cards'
+export default function Home() {
   return (
     <div className="container">
 
@@ -10,7 +10,7 @@ export default function Index() {
       </Head>
 
       <main>
-        <Home></Home>
+        <Cards></Cards>
       </main>
     </div>
   )

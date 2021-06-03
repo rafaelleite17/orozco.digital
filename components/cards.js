@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Card from '../components/card'
+import Card from './card/index'
 import * as Icon from "react-feather";
 const dados = {
   nome: "",
@@ -10,7 +10,7 @@ const dados = {
     icon: <Icon.ArrowRight size={20} />
   },
 };
-export default function Home() {
+export default function Cards() {
   return (
     <div className="">
       <Head>
