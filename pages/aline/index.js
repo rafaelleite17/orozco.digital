@@ -1,11 +1,10 @@
 import Head from "next/head";
-import Card from "../../components/card";
 import * as Icon from "react-feather";
 import Image from "next/image";
-import Noticias from "./components/listaNoticias";
-import Layout from './components/layout'
-import SliderShow from './components/slider'
-import Carousel from './components/carousel'
+import Noticias from "../../components/utils/listaNoticias";
+import Layout from '../../components/layout';
+import SliderShow from '../../components/utils/slider';
+import Carousel from '../../components/utils/carousel';
 
 const dados = {
   nome: "",

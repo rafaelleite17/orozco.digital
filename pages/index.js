@@ -1,5 +1,15 @@
 import Head from 'next/head'
-import Cards from '../components/cards'
+import Cards from '../components/utils/card/index'
+import * as Icon from 'react-feather';
+const dados = {
+  nome: "",
+  titulo: "",
+  botao: {
+    texto: "Meu curriculo",
+    url: "",
+    icon: <Icon.ArrowRight size={20} />
+  },
+};
 export default function Home() {
   return (
     <div className="container">
@@ -10,7 +20,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Cards></Cards>
+        <Cards dados={dados}></Cards>
       </main>
     </div>
   )
