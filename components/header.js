@@ -12,8 +12,7 @@ const Header = () => {
    href="/aline"
   >
 <Image
-        src="logo.svg"
-        alt="Picture of the author"
+        src="/logo.svg"
         width={230}
         height={70}
       />
