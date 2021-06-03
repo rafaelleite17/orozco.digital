@@ -83,7 +83,7 @@ const Aline = () => {
             <div href="#" className="link">
               <div className="label">
                 <Image
-                  src="/svg/014-customer%20review.svg"
+                  src="svg/014-customer%20review.svg"
                   alt="Picture of the author"
                   width={30}
                   height={30}
@@ -94,7 +94,7 @@ const Aline = () => {
             <div href="#" className="link">
               <div className="label" gloss="Text shown on hovering">
                 <Image
-                  src="/svg/030-note.svg"
+                  src="svg/030-note.svg"
                   alt="Picture of the author"
                   width={30}
                   height={30}
@@ -105,7 +105,7 @@ const Aline = () => {
             <div href="#" className="link">
               <div className="label">
                 <Image
-                  src="/svg/040-satisfaction.svg"
+                  src="svg/040-satisfaction.svg"
                   alt="Picture of the author"
                   width={30}
                   height={30}
@@ -124,7 +124,7 @@ const Aline = () => {
             <div href="#" className="link">
               <div className="label">
                 <Image
-                  src="/svg/014-customer%20review.svg"
+                  src="svg/014-customer%20review.svg"
                   alt="Picture of the author"
                   width={30}
                   height={30}
@@ -135,7 +135,7 @@ const Aline = () => {
             <div href="#" className="link">
               <div className="label" gloss="Text shown on hovering">
                 <Image
-                  src="/svg/030-note.svg"
+                  src="svg/030-note.svg"
                   alt="Picture of the author"
                   width={30}
                   height={30}
@@ -146,7 +146,7 @@ const Aline = () => {
             <div href="#" className="link">
               <div className="label">
                 <Image
-                  src="/svg/040-satisfaction.svg"
+                  src="svg/040-satisfaction.svg"
                   alt="Picture of the author"
                   width={30}
                   height={30}
