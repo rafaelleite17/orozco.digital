@@ -5,7 +5,7 @@ const dados = {
   nome: "",
   titulo: "",
   botao: {
-    texto: "Meu curriculo",
+    texto: "Acesse",
     url: "aline",
     icon: <Icon.ArrowRight size={20} />
   },
