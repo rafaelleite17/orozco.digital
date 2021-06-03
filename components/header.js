@@ -1,16 +1,12 @@
 import Link from 'next/link'
 import Image from 'next/image'
-
 const Header = () => {
   return (
     <>
-      <header>
+      <div>
         <div className="grid">
           <div className="column flex">
             <div className="logo">
-              
-     
-
 <Link 
    href="/aline"
   >
@@ -50,7 +46,7 @@ const Header = () => {
             </nav>
           </div>
         </div>
-      </header>
+      </div>
     </>
   );
 };

@@ -1,6 +1,5 @@
 import Head from "next/head";
-import Header from "./components/header";
-import Layout from "./components/layout";
+import Layout from "../../components/layout";
 import * as Icon from "react-feather";
 const Curriculo = () => {
   return (

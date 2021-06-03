@@ -1,9 +1,7 @@
-import Header from "./header";
 import * as Icon from "react-feather";
 export default function Layout({ children }) {
     return (
         <>
-        <Header />
         {children}
         <footer>
         <div className="container "> 

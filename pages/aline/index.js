@@ -1,20 +1,10 @@
 import Head from "next/head";
-import * as Icon from "react-feather";
 import Image from "next/image";
 import Noticias from "../../components/utils/listaNoticias";
 import Layout from '../../components/layout';
 import SliderShow from '../../components/utils/slider';
 import Carousel from '../../components/utils/carousel';
 
-const dados = {
-  nome: "",
-  titulo: "",
-  botao: {
-    texto: "Meu curriculo",
-    url: "",
-    icon: <Icon.ArrowRight size={20} />,
-  },
-};
 const Aline = () => {
   return (
     <div className="pagina">
