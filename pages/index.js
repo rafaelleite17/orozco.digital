@@ -17,9 +17,11 @@ export default function Home() {
         <title>Next.js Starter!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <Cards dados={dados}></Cards>
-      </main>
+      <div className="container">
+        <div className="row center">
+        <Cards dados={dados} classe="card"></Cards>
+        </div>
+      </div>
     </div>
   )
 }
