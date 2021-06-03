@@ -6,7 +6,7 @@ const dados = {
   titulo: "",
   botao: {
     texto: "Meu curriculo",
-    url: "",
+    url: "aline",
     icon: <Icon.ArrowRight size={20} />
   },
 };
