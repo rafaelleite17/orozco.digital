@@ -1,6 +1,5 @@
 import Head from "next/head";
 import * as Icon from "react-feather";
-import Image from "next/image";
 import Noticias from "../../components/utils/listaNoticias";
 import Layout from '../../components/layout';
 import SliderShow from '../../components/utils/slider';
@@ -83,8 +82,8 @@ const Aline = () => {
           </div>
             <div href="#" className="link">
               <div className="label">
-                <Image
-                  src="/svg/014-customer%20review.svg"
+                <img
+                  src="./svg/014-customer%20review.svg"
                   alt="Picture of the author"
                   width={30}
                   height={30}
@@ -94,8 +93,8 @@ const Aline = () => {
             </div>
             <div href="#" className="link">
               <div className="label" gloss="Text shown on hovering">
-                <Image
-                  src="/svg/030-note.svg"
+                <img
+                  src="./svg/030-note.svg"
                   alt="Picture of the author"
                   width={30}
                   height={30}
@@ -105,8 +104,8 @@ const Aline = () => {
             </div>
             <div href="#" className="link">
               <div className="label">
-                <Image
-                  src="/svg/040-satisfaction.svg"
+                <img
+                  src="./svg/040-satisfaction.svg"
                   alt="Picture of the author"
                   width={30}
                   height={30}
@@ -124,8 +123,8 @@ const Aline = () => {
           </div>
             <div href="#" className="link">
               <div className="label">
-                <Image
-                  src="/svg/014-customer%20review.svg"
+                <img
+                  src="./svg/014-customer%20review.svg"
                   alt="Picture of the author"
                   width={30}
                   height={30}
@@ -135,8 +134,8 @@ const Aline = () => {
             </div>
             <div href="#" className="link">
               <div className="label" gloss="Text shown on hovering">
-                <Image
-                  src="/svg/030-note.svg"
+                <img
+                  src="./svg/030-note.svg"
                   alt="Picture of the author"
                   width={30}
                   height={30}
@@ -146,8 +145,8 @@ const Aline = () => {
             </div>
             <div href="#" className="link">
               <div className="label">
-                <Image
-                  src="/svg/040-satisfaction.svg"
+                <img
+                  src="./svg/040-satisfaction.svg"
                   alt="Picture of the author"
                   width={30}
                   height={30}

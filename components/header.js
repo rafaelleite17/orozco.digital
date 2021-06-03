@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 const Header = () => {
   return (
@@ -9,7 +8,7 @@ const Header = () => {
           <div className="column flex">
             <div className="logo">
               <Link href="/aline">
-                <img src="logo.svg" width={230} height={70} />
+                <img src="./logo.svg" width={230} height={70} />
               </Link>
             </div>
           </div>
