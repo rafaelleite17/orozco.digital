@@ -9,7 +9,7 @@ const Header = () => {
           <div className="column flex">
             <div className="logo">
               <Link href="/aline">
-                <Image src="/logo.svg" width={230} height={70} />
+                <Image src="./logo.svg" width={230} height={70} />
               </Link>
             </div>
           </div>
