@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+$small: 300px
+$medium: 1000px
 body
     font-family: 'Roboto', sans-serif
     background: #f5f9fc
@@ -109,6 +111,7 @@ body
         grid-template-columns: auto 1fr
     &.three
         grid-template-columns: 1fr 1fr 1fr
+        
     &.grid-fr-fr
         grid-template-columns: 1fr 1fr
 .menu-header
@@ -241,7 +244,7 @@ header
     background: red
     margin-top: 2rem
     padding: 2rem
-    background: #e5effcb2 
+    background: #e4f0fd 
     &.carousel
         margin-top: 0 !important
         padding: 0 !important
@@ -253,7 +256,7 @@ header
             top: -20%
             height: 122%
             position: absolute
-            background: #e5effcb2 
+            background: #e4f0fd 
             filter: blur(10px)
 .titulo
     font-weight: normal
@@ -326,6 +329,12 @@ footer
     border-radius: .2rem
     box-shadow: 0 0 2rem 0 #16171d0c
     background: rgba(255,255,255,1) !important
+    .titulo-h3
+        font-size: 1.6rem
+        padding-left: 1rem
+        color: #113852
+        margin-top: 0 !important
+        padding-top: 1rem !important
 .slider
     margin: 0 auto
     max-width: 100% !important
@@ -333,7 +342,7 @@ footer
     height: 70vh
     position: relative
     .slide
-        height: 800px
+        height: 90vh
         width: 100%
         background: linear-gradient(58deg, #113a86 0%, #0296fb 100%) !important
         .bg-slider
@@ -444,3 +453,59 @@ footer
                 svg
                     margin-right: .5rem
                     color: rgba(2,150,251,1) 
+@media screen and (max-width: $medium) 
+    header
+        padding: 0 1rem !important
+        .logo
+            img
+                width: 190px !important
+    .slider 
+        height: 50vh !important
+        .nav.default-nav
+            height: 30px !important
+            width: 30px !important
+        .slide
+            height: 50vh
+    .bloco
+        .texto
+            width: 80% !important
+            margin-bottom: 0 !important
+    .grid
+        display: block
+        &.two-grid
+            grid-template-columns: 1fr
+        &.three
+            grid-template-columns: 1fr !important
+        &.grid-fr-fr
+            grid-template-columns: 1fr
+    .flex
+        img
+            height: 150px !important
+    .carousel-slide 
+        padding-bottom: 0 !important
+        flex-wrap: wrap
+        .shape
+            height: 300px !important
+            width: 300px !important
+            margin: 1rem auto !important
+            order: -1
+        .texto
+            margin: 0 auto !important
+            max-width: 80% !important
+    .servicos
+        margin-top: 1rem
+        .grid
+            display: flex
+            flex-wrap: wrap
+            .link
+                text-align: left
+            .flex
+                margin: 1rem auto
+                order: -1 !important
+    footer
+        .links
+            a
+                display: block
+                margin-top: 1rem
+        .redes
+            margin: 1rem 0

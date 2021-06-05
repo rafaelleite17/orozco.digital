@@ -21,13 +21,15 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href={"meucurriculo"}>
+                  <Link  href="aline/#servicos">
                     <a>Serviços</a>
                   </Link>
                 </li>
 
                 <li className="active">
-                  <a href="#">Agende uma conversa</a>
+                  <Link href="aline/contato">
+                    <a href="#">Agende uma conversa</a>
+                  </Link>
                 </li>
               </ul>
             </nav>

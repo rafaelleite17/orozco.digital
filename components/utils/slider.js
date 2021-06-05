@@ -32,7 +32,7 @@ const Slideshow = () => {
     scale: 1.9,
   };
   return (
-    <div>
+    <>
       <Zoom {...zoomInProperties} autoplay={true}>
         {images.map((each, index) => (
           <div key={index} className="slide" >
@@ -49,7 +49,7 @@ const Slideshow = () => {
           </div>
         ))}
       </Zoom>
-    </div>
+    </>
   );
 };
 
