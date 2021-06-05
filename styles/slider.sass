@@ -8,22 +8,18 @@
             background-size: cover
             background-position: 50%  100%
             position: relative
-            &::after
-                background: rgba(255, 255, 255,.3 )
-                backdrop-filter: blur(5px)
-                width: 60%
-                height: 190%
-                transform: skew(15deg)
-                position: absolute
-                left: -10%
-                content: ''
-                top: 0
-        .texto
+        .bloco
             z-index: 2
-            max-width: 40%
-            margin: auto 0 auto 8rem
+            max-width: 1335px !important
+            width: 100%
+            margin: auto 
+            .texto
+                display: flexbox
+                width: 50% !important
+                margin-left: 2rem
+                margin-bottom: 6rem
             h2
-                background: linear-gradient(58deg, #11c3fb 0%, #0296fb 100%)
+                background: linear-gradient(58deg, #ffffff 0%, #9eceee 100%)
                 font-size: 2.7rem !important
                 -webkit-background-clip: text
                 -webkit-text-fill-color: transparent

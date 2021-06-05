@@ -28,18 +28,22 @@ const Slideshow = () => {
   ];
   
   const zoomInProperties = {
-    indicators: true,
+    indicators: false,
     scale: 1.9,
   };
   return (
     <div>
       <Zoom {...zoomInProperties} autoplay={true}>
         {images.map((each, index) => (
-          <div key={index} className="slide" style={{backgroundImage: `url(${each.image})`}}>
-            <div className="texto">
+          <div key={index} className="slide" >
+            <div className="bg-slider" style={{backgroundImage: `url(${each.image})`}}></div>
+            <div className="bloco">
+              <div className="texto">
               <h2>{each.titulo}</h2>
               <p>{each.descricao}</p>
               <div className="item">{each.descricao}</div>
+              </div>
+           
             </div>
 
           </div>
