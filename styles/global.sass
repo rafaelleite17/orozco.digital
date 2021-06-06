@@ -125,6 +125,7 @@ body
                 border-radius: 2rem
                 padding: .8rem 1.3rem
                 a
+                    cursor: pointer
                     color: #181b24 !important
                 &:hover
                     background: 
@@ -137,6 +138,9 @@ body
                         color: #fff !important
 header
     padding: 3rem 2rem 2rem
+    overflow: hidden
+    background: white
+    position: relative
     div
         max-width: 1320px !important
         grid-template-columns: auto 1fr   
@@ -453,7 +457,57 @@ footer
                 svg
                     margin-right: .5rem
                     color: rgba(2,150,251,1) 
+.menu-scroll 
+    position: relative
+    z-index: 999
+    top: 0
+    right: 0
+    backdrop-filter: blur(20px)
+    background: rgba(255, 255, 255, 0.75) 
+    width: 100vh
+    max-width: 45vh
+    padding-bottom: 1rem
+    display: flex
+    nav
+        ul
+            li
+                padding: .9rem 1rem !important
+                border-radius: 2rem
+                &.active
+                    background: #07a8fb
+                    box-shadow: 0 0 0 .1rem #07a8fb
+                    color: #fff
+    &.hidden 
+      display: none
+    .close 
+      color: #113852
+      position: absolute
+      cursor: pointer
+      padding: 1rem
+      top: 0
+      right: 0
+      margin: 1rem 2rem
+.menu-btn
+    display: none !important
+    position: absolute
+    top: 3.2rem
+    border-radius: 2rem
+    color: #07a8fb
+    box-shadow: 0 0 0 .1rem
+    padding: .3rem .3rem 
+    right: 1rem
+    height: 23px
+    width: 23px
+    z-index: 15
+    &.active
+        background: #07a8fb
+        box-shadow: 0 0 0 .1rem #07a8fb
+        color: #fff
+    svg
+        margin: auto !important
 @media screen and (max-width: $medium) 
+    .menu-btn
+        display: flex !important
     header
         padding: 0 1rem !important
         .menu-header
@@ -490,6 +544,8 @@ footer
     .flex
         img
             height: 150px !important
+    .carrousel
+        padding-bottom: 0 !important
     .carousel-slide 
         padding-bottom: 0 !important
         flex-wrap: wrap
