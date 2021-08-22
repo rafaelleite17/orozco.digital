@@ -16,7 +16,7 @@ const menu = [
     nome: "Serviços",
   },
   {
-    href: "aline/contato",
+    href: "/aline/contato",
     nome: "Agende uma conversa",
     classe: 'active'
   },
@@ -41,25 +41,25 @@ const Header = () => {
           <div className="column flex">
             <div className="logo">
               <a href="/aline">
-                <img src="./logo.svg" width={230} height={70} />
+                <img src="logo.svg" width={230} height={70} />
               </a>
               <div
-            onClick={() => {
-              clickSidebar(!sidebar);
-            }}
-            className={`menu-btn ${!sidebar ? "" : "active"}`}
-          >
-            {!sidebar ? <Icon.Menu /> : <Icon.X />}
-          </div>
+                onClick={() => {
+                  clickSidebar(!sidebar);
+                }}
+                className={`menu-btn ${!sidebar ? "" : "active"}`}
+              >
+                {!sidebar ? <Icon.Menu /> : <Icon.X />}
+              </div>
             </div>
           </div>
           <div className="column menu-header">
-       
+
             <nav>
               <ul>
                 {menu.map((item) => (
                   <li className={item.classe} >
-                    <a onClick={() => router.push(`${item.href}`)}>
+                    <a onClick={() => router.push(`/${item.href}`)}>
                       {item.nome}
                     </a>
                   </li>
@@ -68,7 +68,7 @@ const Header = () => {
             </nav>
           </div>
 
-  
+
         </div>
         <div className={`menu-scroll ${sidebar ? "show" : "hidden"}`}>
           <nav>
@@ -81,7 +81,7 @@ const Header = () => {
             </ul>
           </nav>
         </div>
-    
+
       </header>
     </>
   );
