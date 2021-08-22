@@ -59,7 +59,7 @@ const Header = () => {
               <ul>
                 {menu.map((item) => (
                   <li className={item.classe} >
-                    <a onClick={() => router.push(`/${item.href}`)}>
+                    <a onClick={() => router.push(`${item.href}`)}>
                       {item.nome}
                     </a>
                   </li>

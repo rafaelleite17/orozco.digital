@@ -20,7 +20,7 @@ const Curriculo = () => {
               </div>
               <div>
                 <span> Celular : </span>
-                <span>  <a href="tel:5515991979554">    <Icon.PhoneCall size="13" /> (15) 99197 9554 </a> | <a href="https://wa.me/5515991979554">  <Icon.MessageCircle size="13" />  (15) 99197 9554 </a> </span>
+                <span>  <a href="tel:5515991979554"><Icon.PhoneCall size="13" /> (15) 99197 9554 </a> | <a href="https://wa.me/5515991979554">  <Icon.MessageCircle size="13" />  (15) 99197 9554 </a> </span>
               </div>
               <div>
                 <span> E-mail : </span>
@@ -163,7 +163,7 @@ const Curriculo = () => {
 
               <ul>
                 <li>
-                <Icon.ChevronsRight size="13" /> Maratona Departamento Pessoal 2020 ( e-social) – EB
+                  <Icon.ChevronsRight size="13" /> Maratona Departamento Pessoal 2020 ( e-social) – EB
                   treinamento
                 </li>
                 <li>
