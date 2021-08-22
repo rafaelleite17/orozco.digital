@@ -41,7 +41,7 @@ const Header = () => {
           <div className="column flex">
             <div className="logo">
               <a href="/aline">
-                <img src="logo.svg" width={230} height={70} />
+                <img src="../logo.svg" width={230} height={70} />
               </a>
               <div
                 onClick={() => {
